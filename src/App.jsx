@@ -1,5 +1,6 @@
 
 import './App.css'
+import { ApiCatGallery } from './components/ApiCatGallery'
 import ApiCoffeCarousel from './components/ApiCoffeCarousel'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <ApiCoffeCarousel/>
+        <ApiCatGallery/>
       </div>
       
     </>

@@ -31,7 +31,7 @@ const ApiCoffeCarousel = () => {
                             {coffeeList.map((coffee, index) => (
                                 <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                                     <div className='d-flex flex-column justify-content-center align-items-center'>
-                                        <img src={coffee.image} className="d-block w-75" alt={coffee.title} />
+                                        <img src={coffee.image} className="d-block  w-75" alt={coffee.title} />
                                     </div>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>{coffee.title}</h5>
