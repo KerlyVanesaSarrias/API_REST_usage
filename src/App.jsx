@@ -1,7 +1,6 @@
 
 import './App.css'
-import { ApiCatGallery } from './components/ApiCatGallery'
-import ApiCoffeCarousel from './components/ApiCoffeCarousel'
+import { ApiRickAndMorty } from './components/ApiRickAndMorty'
 
 function App() {
 
@@ -9,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <ApiCatGallery/>
+        <ApiRickAndMorty/>
       </div>
       
     </>

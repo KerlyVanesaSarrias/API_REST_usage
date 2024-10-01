@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const ApiCoffeCarousel = () => {
+export  const ApiCoffeCarousel = () => {
 
     const [coffeeList, setCoffeList] = useState([])
 
@@ -16,8 +16,6 @@ const ApiCoffeCarousel = () => {
         }
         fetchData()
     }, []);
-
-    console.log(coffeeList)
 
     return (
         <>
@@ -55,4 +53,3 @@ const ApiCoffeCarousel = () => {
     )
 }
 
-export default ApiCoffeCarousel
