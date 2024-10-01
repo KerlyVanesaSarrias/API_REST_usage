@@ -6,7 +6,6 @@ const ApiCoffeCarousel = () => {
     const [coffeeList, setCoffeList] = useState([])
 
     useEffect(() => {
-
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://api.sampleapis.com/coffee/hot')
@@ -16,8 +15,7 @@ const ApiCoffeCarousel = () => {
             }
         }
         fetchData()
-    }
-        , []);
+    }, []);
 
     console.log(coffeeList)
 
@@ -25,14 +23,16 @@ const ApiCoffeCarousel = () => {
         <>
             <div className="container-fluid p-0">
                 <div className="text-center mb-4">
-                    <h1 className="text-white">Coffee List</h1> {/* Título del carrusel centrado */}
+                    <h1 className="text-white">Coffee List</h1> 
                 </div>
                 <div className="carousel-container">
                     <div id="coffeeCarousel" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             {coffeeList.map((coffee, index) => (
                                 <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                                    <img src={coffee.image} className="d-block w-100" alt={coffee.title} />
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
+                                        <img src={coffee.image} className="d-block w-75" alt={coffee.title} />
+                                    </div>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>{coffee.title}</h5>
                                         <p>{coffee.description}</p>
