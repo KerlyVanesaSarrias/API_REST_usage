@@ -58,7 +58,7 @@ body, html {
   height: 100%;
   background-color:  #062226;
   color: white;
-}
+  }
 
 /* Aseguramos que la imagen ocupe el espacio adecuado */
 .fixed-img {
@@ -80,6 +80,7 @@ body, html {
 .card_name {
   text-align: center;
   font-weight: 700;
+  color: white;
 }
 
 .card_hr {
@@ -108,4 +109,17 @@ body, html {
 .card_value {
   font-weight: 300;
   padding-left: 0.5em;
+  color: white;
+}
+
+.cards {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 0.8em;
+  overflow: hidden;
+  background-color: #062226;
+  transition: transform 150ms ease;
+  &:hover{
+      transform:scale(1.02) ;
+  }
 }
