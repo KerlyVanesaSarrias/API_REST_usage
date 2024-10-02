@@ -56,6 +56,8 @@ body, html {
 /* Aseguramos que la card tenga una altura fija */
 .card {
   height: 100%;
+  background-color:  #062226;
+  color: white;
 }
 
 /* Aseguramos que la imagen ocupe el espacio adecuado */
@@ -69,4 +71,41 @@ body, html {
 .scrollable-container {
   max-height: 80vh;
   overflow-y: scroll;
+}
+
+.card_body {
+  padding: 1.5em 1.5em 2em;
+}
+
+.card_name {
+  text-align: center;
+  font-weight: 700;
+}
+
+.card_hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-color: #aaa4 ;
+}
+
+.card_list {
+  display: grid;
+  gap:1em
+}
+
+.card_item {
+  display: flex;
+  flex-direction: column;
+  gap:0.5 em
+}
+
+.card_label {
+  padding-left: 1em;
+  color: #aaaa;
+  font-weight: 500;
+}
+
+.card_value {
+  font-weight: 300;
+  padding-left: 0.5em;
 }
