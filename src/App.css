@@ -62,7 +62,7 @@ body, html {
 
 /* Aseguramos que la imagen ocupe el espacio adecuado */
 .fixed-img {
-  height: 400px;
+  height: 250px;
   width: 100%;
   object-fit: cover; /* Asegura que la imagen se ajuste al tamaño sin distorsionarse */
 }
@@ -73,10 +73,6 @@ body, html {
   overflow-y: scroll;
 }
 
-.card_body {
-  padding: 1.5em 1.5em 2em;
-}
-
 .card_name {
   text-align: center;
   font-weight: 700;
@@ -84,14 +80,14 @@ body, html {
 }
 
 .card_hr {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   border-color: #aaa4 ;
 }
 
 .card_list {
   display: grid;
-  gap:1em
+  gap:0.5em
 }
 
 .card_item {
@@ -114,7 +110,7 @@ body, html {
 
 .cards {
   width: 100%;
-  max-width: 350px;
+  max-width: 280px;
   border-radius: 0.8em;
   overflow: hidden;
   background-color: #062226;
